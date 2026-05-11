@@ -1,5 +1,4 @@
 Link do vídeo explicativo: https://youtu.be/PL2QiBIZh48
-O vídeo foi roteirizado e feito de última hora. Peço desculpas pela mal qualidade. Depois irei fazer outro melhor, mas no momento vai ter que servir este mesmo!
 
 # 🗺️ Desafio WAR Estruturado – Conquista de Territórios
 
