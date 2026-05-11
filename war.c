@@ -68,12 +68,42 @@ char *missoes[TOTAL_MISSOES] = {
 // --- Função Principal (main) ---
 // Função principal que orquestra o fluxo do jogo, chamando as outras funções em ordem.
 int main() {
+    
     // 1. Configuração Inicial (Setup):
     // - Define o locale para português.
     // - Inicializa a semente para geração de números aleatórios com base no tempo atual.
     // - Aloca a memória para o mapa do mundo e verifica se a alocação foi bem-sucedida.
     // - Preenche os territórios com seus dados iniciais (tropas, donos, etc.).
     // - Define a cor do jogador e sorteia sua missão secreta.
+        srand(time(NULL));
+
+            int quantidade;
+            int opcao;
+            char *missaoJogador;
+
+            printf("====================================\n");
+            printf("       WAR ESTRUTURADO - FINAL\n");
+            printf("====================================\n");
+
+            printf("Digite a quantidade de territorios: ");
+            scanf("%d", &quantidade);
+
+            // aloca mapa
+            Territorio *mapa = alocarMapa(quantidade);
+
+            if(mapa == NULL) {
+                printf("Erro de memoria!\n");
+                return 1;
+            }
+
+            inicializarTerritorios(mapa, quantidade);
+
+            // aloca missão
+            missaoJogador = (char*) malloc(100 * sizeof(char));
+            atribuirMissao(missaoJogador, missoes, TOTAL_MISSOES);
+
+            printf("\n========= SUA MISSAO =========\n");
+            printf("%s\n", missaoJogador);
 
     // 2. Laço Principal do Jogo (Game Loop):
     // - Roda em um loop 'do-while' que continua até o jogador sair (opção 0) ou vencer.
