@@ -233,7 +233,7 @@ void atribuirMissao(char *destino, char *missoes[], int total) {
     strcpy(destino, missoes[rand() % total]);
 }
 
-// ================= MISSÃO CORRIGIDA =================
+// ================= Verifica a missão =================
 int verificarMissao(const Territorio *mapa,
                     int quantidade,
                     const char *missao) {
