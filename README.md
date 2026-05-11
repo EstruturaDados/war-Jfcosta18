@@ -1,3 +1,6 @@
+Link do vídeo explicativo: https://youtu.be/PL2QiBIZh48
+O vídeo foi roteirizado e feito de última hora. Peço desculpas pela mal qualidade. Depois irei fazer outro melhor, mas no momento vai ter que servir este mesmo!
+
 # 🗺️ Desafio WAR Estruturado – Conquista de Territórios
 
 Bem-vindo ao **Desafio WAR Estruturado!** Inspirado no famoso jogo de estratégia, este desafio convida você a programar diferentes versões do jogo WAR, evoluindo seus conhecimentos em **C** à medida que avança pelos níveis **Novato**, **Aventureiro** e **Mestre**.
